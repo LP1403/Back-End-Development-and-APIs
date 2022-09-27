@@ -17,7 +17,7 @@ let Person = mongoose.model("Person", personSchema);
 
 
 const createAndSavePerson = (done) => {
-  var person = new Person({name: "Lucas Perez", age: 23, favoriteFoods: ["Caca", "Pis", "Vomito"]});
+  var person = new Person({name: "Lucas Perez", age: 23, favoriteFoods: ["Pizza", "Ensalada", "Entraña"]});
   person.save(function(err, data){
     if (err) return console.error(err);
       done(null, data)
@@ -25,7 +25,7 @@ const createAndSavePerson = (done) => {
 };
 
 var arrayOfPeople = [
-  {name: "Lucas Perez", age: 23, favoriteFoods: ["Caca", "Pis", "Vomito"]},
+  {name: "Lucas Perez", age: 23, favoriteFoods: ["Pizza", "Ensalada", "Entraña"]},
   {name: "Sol", age: 21, favoriteFoods: ["Higado"]},
   {name: "Juan", age: 30, favoriteFoods: ["Pizza"]}
 ];
